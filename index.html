@@ -23,6 +23,35 @@
             margin: 0 auto;
         }
 
+        .breadcrumbs {
+            background: white;
+            padding: 12px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 32px;
+        }
+
+        .breadcrumbs a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0;
+            display: inline;
+            transition: color 0.3s;
+        }
+
+        .breadcrumbs a:hover {
+            color: #1d4ed8;
+        }
+
+
+
+        .breadcrumbs .separator {
+            margin: 0 8px;
+            color: #6b7280;
+        }
+
         h1 {
             font-size: 3rem;
             font-weight: bold;
@@ -100,7 +129,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Introduction to Artificial Intelligence 3171104</h1>
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumbs">
+            <a href="/">Home</a>
+        </nav>
+        
+        <h1>Welcome to [Course Name]</h1>
         <h2>Chapters</h2>
         <ul>
             <li><a href="chapter-01-introduction/">Chapter 1: Introduction</a></li>
