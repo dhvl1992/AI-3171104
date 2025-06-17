@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Course Name</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            min-height: 100vh;
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .breadcrumbs {
+            background: white;
+            padding: 12px 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 32px;
+        }
+
+        .breadcrumbs a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0;
+            display: inline;
+            transition: color 0.3s;
+        }
+
+        .breadcrumbs a:hover {
+            color: #1d4ed8;
+        }
+
+
+
+        .breadcrumbs .separator {
+            margin: 0 8px;
+            color: #6b7280;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #1f2937;
+            text-align: center;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1f2937;
+            text-align: center;
+            margin: 48px 0 32px 0;
+        }
+
+        ul {
+            list-style: none;
+            display: grid;
+            gap: 20px;
+        }
+
+        li {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        li:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        li:nth-child(3n+1) { border-left: 5px solid #3b82f6; }
+        li:nth-child(3n+2) { border-left: 5px solid #10b981; }
+        li:nth-child(3n+3) { border-left: 5px solid #8b5cf6; }
+
+        a {
+            display: block;
+            padding: 24px;
+            text-decoration: none;
+            color: #1f2937;
+            font-size: 1.25rem;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        a:hover {
+            color: #3b82f6;
+        }
+
+
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            a {
+                font-size: 1.125rem;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumbs">
+            <a href="/">Home</a>
+        </nav>
+        
+        <h1>Welcome to [Course Name]</h1>
+        <h2>Chapters</h2>
+        <ul>
+            <li><a href="chapter-01-introduction/">Chapter 1: Introduction</a></li>
+            <li><a href="chapter-02-fundamentals/">Chapter 2: Fundamentals</a></li>
+            <li><a href="chapter-03-advanced/">Chapter 3: Advanced Topics</a></li>
+        </ul>
+    </div>
+</body>
+</html>
